@@ -1,0 +1,89 @@
+{
+  "cookies": [
+    {
+      "name": "eps_sid",
+      "value": "2c62fa0f310a862c12fc1c3b70239c30a5e7e338",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1744455260,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "tmpt",
+      "value": "0:be0cf34bee000000:1741863276:547d2a2a:26be20f8a63ef80f736eb03084dcc7b2:0fb64b292bd7ecd822a62886a6690e6ffa93e7797593fc758736961307c3d4a5",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1741866879,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "lightstep_guid%2Fco2.sdk",
+      "value": "4667e54f28dfb833",
+      "domain": "www.ticketmaster.ca",
+      "path": "/",
+      "expires": 1742468084,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "lightstep_session_id",
+      "value": "0a5cc44c4b797fc5",
+      "domain": "www.ticketmaster.ca",
+      "path": "/",
+      "expires": 1742468084,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1371572055.1741863288",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1749639287,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AP_l5mNkiXf8bT3hk99CI9d5o13r0ZZDeUDPzqODIZFbdZgfPFUGl3fuLY9dEhCZustm_uAwuY1G3FSW82J3apA",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1757415274,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.ticketmaster.ca",
+      "localStorage": [
+        {
+          "name": "_grecaptcha",
+          "value": "09AP_l5mOm0tviop5CN61YZzHHMxcCdyHSEZkH3HEpX5lJ-sVPLAa18MYrnMKQvjG-peoF-x_7bcwDppFEVe5l6GZt9KuJlELuzQuCysR4rUPU3VSZXkAwZ0oB-hV2xuxC"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::f",
+          "value": "0aAIqooPqo9y3YIhMXCa35_xbYNEzfBL7pmRcMqf_-OnmgmCRauR7nys3f48JI60_5qKAa0_w"
+        },
+        {
+          "name": "rc::a",
+          "value": "MW96ZzJkbTFmeXd2bDE="
+        }
+      ]
+    }
+  ],
+  "timestamp": "2025-03-13T17:54:50.272377"
+}

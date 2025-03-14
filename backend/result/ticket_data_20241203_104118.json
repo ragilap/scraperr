@@ -1,0 +1,1603 @@
+{
+  "url": "https://www.ticketmaster.com/linkin-park-from-zero-world-tour-boston-massachusetts-08-01-2025/event/0100616C91D7104A",
+  "title": "LINKIN PARK: From Zero World Tour - 2025",
+  "held_on": "Jumat, 1 Agustus, 2025, 19:30",
+  "location": "TD Garden, Boston, MA",
+  "sections": {
+    "BAL301": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "11",
+          "price": 308.0
+        },
+        {
+          "row": "2",
+          "price": 343.0
+        }
+      ]
+    },
+    "BAL302": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "15",
+          "price": 159.0
+        },
+        {
+          "row": "9",
+          "price": 190.0
+        },
+        {
+          "row": "9",
+          "price": 195.0
+        },
+        {
+          "row": "10",
+          "price": 199.0
+        }
+      ]
+    },
+    "BAL303": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "11",
+          "price": 179.0
+        }
+      ]
+    },
+    "BAL304": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "9",
+          "price": 162.0
+        }
+      ]
+    },
+    "BAL305": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "9",
+          "price": 169.0
+        },
+        {
+          "row": "3",
+          "price": 200.0
+        },
+        {
+          "row": "11",
+          "price": 527.0
+        }
+      ]
+    },
+    "BAL306": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "13",
+          "price": 135.0
+        },
+        {
+          "row": "11",
+          "price": 154.0
+        },
+        {
+          "row": "2",
+          "price": 159.0
+        },
+        {
+          "row": "5",
+          "price": 169.0
+        },
+        {
+          "row": "1",
+          "price": 205.0
+        },
+        {
+          "row": "1",
+          "price": 231.0
+        },
+        {
+          "row": "1",
+          "price": 241.0
+        },
+        {
+          "row": "11",
+          "price": 532.0
+        }
+      ]
+    },
+    "BAL307": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "14",
+          "price": 116.0
+        },
+        {
+          "row": "13",
+          "price": 522.0
+        }
+      ]
+    },
+    "BAL308": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "7",
+          "price": 128.0
+        },
+        {
+          "row": "12",
+          "price": 133.0
+        },
+        {
+          "row": "7",
+          "price": 149.0
+        },
+        {
+          "row": "2",
+          "price": 220.0
+        },
+        {
+          "row": "1",
+          "price": 282.0
+        }
+      ]
+    },
+    "BAL309": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "12",
+          "price": 143.0
+        },
+        {
+          "row": "2",
+          "price": 152.0
+        },
+        {
+          "row": "3",
+          "price": 166.0
+        },
+        {
+          "row": "10",
+          "price": 239.0
+        }
+      ]
+    },
+    "BAL310": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "12",
+          "price": 141.0
+        },
+        {
+          "row": "15",
+          "price": 144.0
+        },
+        {
+          "row": "12",
+          "price": 146.0
+        },
+        {
+          "row": "9",
+          "price": 175.0
+        },
+        {
+          "row": "1",
+          "price": 185.0
+        },
+        {
+          "row": "1",
+          "price": 233.0
+        },
+        {
+          "row": "1",
+          "price": 255.0
+        }
+      ]
+    },
+    "BAL311": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "6",
+          "price": 153.0
+        },
+        {
+          "row": "2",
+          "price": 163.0
+        },
+        {
+          "row": "1",
+          "price": 185.0
+        },
+        {
+          "row": "1",
+          "price": 232.0
+        },
+        {
+          "row": "11",
+          "price": 537.0
+        },
+        {
+          "row": "11",
+          "price": 543.0
+        }
+      ]
+    },
+    "BAL312": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "14",
+          "price": 128.0
+        },
+        {
+          "row": "11",
+          "price": 149.0
+        }
+      ]
+    },
+    "BAL313": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "15",
+          "price": 116.0
+        },
+        {
+          "row": "12",
+          "price": 126.0
+        },
+        {
+          "row": "15",
+          "price": 131.0
+        },
+        {
+          "row": "7",
+          "price": 144.0
+        },
+        {
+          "row": "10",
+          "price": 164.0
+        },
+        {
+          "row": "2",
+          "price": 183.0
+        }
+      ]
+    },
+    "BAL314": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "15",
+          "price": 149.0
+        },
+        {
+          "row": "12",
+          "price": 164.0
+        },
+        {
+          "row": "1",
+          "price": 218.0
+        },
+        {
+          "row": "1",
+          "price": 223.0
+        }
+      ]
+    },
+    "BAL315": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "13",
+          "price": 164.0
+        },
+        {
+          "row": "12",
+          "price": 173.0
+        },
+        {
+          "row": "11",
+          "price": 181.0
+        },
+        {
+          "row": "9",
+          "price": 185.0
+        },
+        {
+          "row": "7",
+          "price": 200.0
+        },
+        {
+          "row": "2",
+          "price": 224.0
+        }
+      ]
+    },
+    "BAL316": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "11",
+          "price": 163.0
+        },
+        {
+          "row": "11",
+          "price": 164.0
+        },
+        {
+          "row": "15",
+          "price": 175.0
+        },
+        {
+          "row": "10",
+          "price": 205.0
+        },
+        {
+          "row": "10",
+          "price": 225.0
+        },
+        {
+          "row": "10",
+          "price": 256.0
+        },
+        {
+          "row": "1",
+          "price": 308.0
+        }
+      ]
+    },
+    "BAL317": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "2",
+          "price": 199.0
+        },
+        {
+          "row": "9",
+          "price": 205.0
+        },
+        {
+          "row": "1",
+          "price": 246.0
+        }
+      ]
+    },
+    "BAL318": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "15",
+          "price": 152.0
+        },
+        {
+          "row": "15",
+          "price": 154.0
+        },
+        {
+          "row": "14",
+          "price": 157.0
+        },
+        {
+          "row": "15",
+          "price": 164.0
+        },
+        {
+          "row": "1",
+          "price": 204.0
+        }
+      ]
+    },
+    "BAL319": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "13",
+          "price": 116.0
+        },
+        {
+          "row": "11",
+          "price": 138.0
+        },
+        {
+          "row": "15",
+          "price": 140.0
+        },
+        {
+          "row": "15",
+          "price": 141.0
+        },
+        {
+          "row": "5",
+          "price": 159.0
+        },
+        {
+          "row": "13",
+          "price": 161.0
+        },
+        {
+          "row": "6",
+          "price": 170.0
+        },
+        {
+          "row": "15",
+          "price": 182.0
+        }
+      ]
+    },
+    "BAL320": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "7",
+          "price": 150.0
+        },
+        {
+          "row": "13",
+          "price": 167.0
+        },
+        {
+          "row": "1",
+          "price": 194.0
+        },
+        {
+          "row": "11",
+          "price": 548.0
+        }
+      ]
+    },
+    "BAL321": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "11",
+          "price": 117.0
+        },
+        {
+          "row": "11",
+          "price": 131.0
+        },
+        {
+          "row": "5",
+          "price": 159.0
+        }
+      ]
+    },
+    "BAL322": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "14",
+          "price": 116.0
+        },
+        {
+          "row": "13",
+          "price": 117.0
+        },
+        {
+          "row": "6",
+          "price": 133.0
+        },
+        {
+          "row": "12",
+          "price": 135.0
+        },
+        {
+          "row": "12",
+          "price": 136.0
+        },
+        {
+          "row": "13",
+          "price": 146.0
+        },
+        {
+          "row": "9",
+          "price": 148.0
+        },
+        {
+          "row": "9",
+          "price": 150.0
+        },
+        {
+          "row": "10",
+          "price": 151.0
+        },
+        {
+          "row": "14",
+          "price": 152.0
+        },
+        {
+          "row": "1",
+          "price": 200.0
+        },
+        {
+          "row": "1",
+          "price": 255.0
+        },
+        {
+          "row": "11",
+          "price": 553.0
+        }
+      ]
+    },
+    "BAL323": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "12",
+          "price": 125.0
+        },
+        {
+          "row": "14",
+          "price": 137.0
+        },
+        {
+          "row": "7",
+          "price": 149.0
+        },
+        {
+          "row": "4",
+          "price": 152.0
+        },
+        {
+          "row": "10",
+          "price": 153.0
+        },
+        {
+          "row": "2",
+          "price": 220.0
+        },
+        {
+          "row": "1",
+          "price": 241.0
+        },
+        {
+          "row": "1",
+          "price": 282.0
+        }
+      ]
+    },
+    "BAL324": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "12",
+          "price": 131.0
+        },
+        {
+          "row": "12",
+          "price": 146.0
+        },
+        {
+          "row": "6",
+          "price": 149.0
+        },
+        {
+          "row": "7",
+          "price": 149.0
+        },
+        {
+          "row": "5",
+          "price": 154.0
+        },
+        {
+          "row": "10",
+          "price": 154.0
+        },
+        {
+          "row": "4",
+          "price": 159.0
+        },
+        {
+          "row": "3",
+          "price": 164.0
+        },
+        {
+          "row": "11",
+          "price": 167.0
+        },
+        {
+          "row": "2",
+          "price": 220.0
+        },
+        {
+          "row": "1",
+          "price": 231.0
+        },
+        {
+          "row": "1",
+          "price": 241.0
+        }
+      ]
+    },
+    "BAL325": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "6",
+          "price": 157.0
+        },
+        {
+          "row": "15",
+          "price": 157.0
+        },
+        {
+          "row": "11",
+          "price": 558.0
+        }
+      ]
+    },
+    "BAL326": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "15",
+          "price": 117.0
+        },
+        {
+          "row": "14",
+          "price": 136.0
+        },
+        {
+          "row": "4",
+          "price": 143.0
+        },
+        {
+          "row": "6",
+          "price": 152.0
+        }
+      ]
+    },
+    "BAL327": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "15",
+          "price": 117.0
+        },
+        {
+          "row": "11",
+          "price": 133.0
+        },
+        {
+          "row": "4",
+          "price": 141.0
+        },
+        {
+          "row": "5",
+          "price": 161.0
+        },
+        {
+          "row": "2",
+          "price": 205.0
+        }
+      ]
+    },
+    "BAL328": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "13",
+          "price": 126.0
+        },
+        {
+          "row": "14",
+          "price": 131.0
+        },
+        {
+          "row": "2",
+          "price": 153.0
+        },
+        {
+          "row": "9",
+          "price": 174.0
+        },
+        {
+          "row": "1",
+          "price": 261.0
+        }
+      ]
+    },
+    "BAL329": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "13",
+          "price": 161.0
+        },
+        {
+          "row": "10",
+          "price": 193.0
+        },
+        {
+          "row": "10",
+          "price": 199.0
+        },
+        {
+          "row": "9",
+          "price": 204.0
+        }
+      ]
+    },
+    "BAL330": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "9",
+          "price": 225.0
+        }
+      ]
+    },
+    "CLB137": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "H",
+          "price": 381.0
+        },
+        {
+          "row": "H",
+          "price": 392.0
+        }
+      ]
+    },
+    "CLB141": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "G",
+          "price": 292.0
+        },
+        {
+          "row": "E",
+          "price": 333.0
+        },
+        {
+          "row": "H",
+          "price": 349.99
+        },
+        {
+          "row": "E",
+          "price": 358.0
+        }
+      ]
+    },
+    "CLB143": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "E",
+          "price": 307.0
+        }
+      ]
+    },
+    "CLB145": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "H",
+          "price": 235.0
+        },
+        {
+          "row": "J",
+          "price": 392.0
+        }
+      ]
+    },
+    "Featured": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "Featured",
+          "price": 404.5
+        },
+        {
+          "row": "Featured",
+          "price": 489.0
+        },
+        {
+          "row": "Featured",
+          "price": 529.5
+        }
+      ]
+    },
+    "GENERAL ADMISSION": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "GENERAL ADMISSION",
+          "price": 292.0
+        }
+      ]
+    },
+    "LOGE1": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "14",
+          "price": 417.0
+        },
+        {
+          "row": "17",
+          "price": 461.0
+        },
+        {
+          "row": "1",
+          "price": 3422.0
+        }
+      ]
+    },
+    "LOGE2": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "17",
+          "price": 296.0
+        },
+        {
+          "row": "12",
+          "price": 371.0
+        },
+        {
+          "row": "12",
+          "price": 418.0
+        },
+        {
+          "row": "11",
+          "price": 522.0
+        },
+        {
+          "row": "1",
+          "price": 767.0
+        },
+        {
+          "row": "1",
+          "price": 870.0
+        }
+      ]
+    },
+    "LOGE3": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "22",
+          "price": 233.0
+        },
+        {
+          "row": "10",
+          "price": 248.0
+        },
+        {
+          "row": "24",
+          "price": 257.0
+        },
+        {
+          "row": "26",
+          "price": 258.0
+        },
+        {
+          "row": "26",
+          "price": 280.0
+        },
+        {
+          "row": "21",
+          "price": 285.0
+        },
+        {
+          "row": "14",
+          "price": 291.0
+        },
+        {
+          "row": "14",
+          "price": 295.0
+        },
+        {
+          "row": "2",
+          "price": 489.0
+        },
+        {
+          "row": "5",
+          "price": 529.5
+        },
+        {
+          "row": "1",
+          "price": 776.0
+        }
+      ]
+    },
+    "LOGE4": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "26",
+          "price": 250.0
+        },
+        {
+          "row": "15",
+          "price": 268.0
+        },
+        {
+          "row": "11",
+          "price": 285.0
+        },
+        {
+          "row": "24",
+          "price": 289.0
+        },
+        {
+          "row": "23",
+          "price": 312.0
+        },
+        {
+          "row": "18",
+          "price": 333.0
+        },
+        {
+          "row": "19",
+          "price": 335.0
+        },
+        {
+          "row": "2",
+          "price": 417.0
+        }
+      ]
+    },
+    "LOGE5": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "26",
+          "price": 229.0
+        },
+        {
+          "row": "26",
+          "price": 231.0
+        },
+        {
+          "row": "24",
+          "price": 235.0
+        },
+        {
+          "row": "26",
+          "price": 251.0
+        },
+        {
+          "row": "23",
+          "price": 258.0
+        }
+      ]
+    },
+    "LOGE6": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "12",
+          "price": 239.0
+        },
+        {
+          "row": "16",
+          "price": 248.0
+        },
+        {
+          "row": "17",
+          "price": 251.0
+        },
+        {
+          "row": "12",
+          "price": 254.0
+        },
+        {
+          "row": "26",
+          "price": 265.0
+        },
+        {
+          "row": "18",
+          "price": 268.0
+        },
+        {
+          "row": "12",
+          "price": 296.0
+        },
+        {
+          "row": "24",
+          "price": 300.0
+        }
+      ]
+    },
+    "LOGE7": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "21",
+          "price": 229.0
+        },
+        {
+          "row": "22",
+          "price": 230.0
+        },
+        {
+          "row": "25",
+          "price": 230.0
+        },
+        {
+          "row": "22",
+          "price": 234.0
+        },
+        {
+          "row": "26",
+          "price": 243.0
+        },
+        {
+          "row": "24",
+          "price": 254.0
+        },
+        {
+          "row": "14",
+          "price": 261.0
+        },
+        {
+          "row": "15",
+          "price": 261.0
+        },
+        {
+          "row": "26",
+          "price": 266.0
+        },
+        {
+          "row": "26",
+          "price": 277.0
+        },
+        {
+          "row": "11",
+          "price": 309.0
+        },
+        {
+          "row": "23",
+          "price": 323.0
+        },
+        {
+          "row": "7",
+          "price": 407.0
+        },
+        {
+          "row": "1",
+          "price": 507.0
+        }
+      ]
+    },
+    "LOGE8": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "24",
+          "price": 229.0
+        },
+        {
+          "row": "25",
+          "price": 230.0
+        },
+        {
+          "row": "11",
+          "price": 258.0
+        }
+      ]
+    },
+    "LOGE9": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "15",
+          "price": 229.0
+        },
+        {
+          "row": "14",
+          "price": 230.0
+        },
+        {
+          "row": "25",
+          "price": 250.0
+        },
+        {
+          "row": "26",
+          "price": 265.0
+        },
+        {
+          "row": "13",
+          "price": 268.0
+        }
+      ]
+    },
+    "LOGE10": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "22",
+          "price": 228.0
+        },
+        {
+          "row": "24",
+          "price": 233.0
+        },
+        {
+          "row": "22",
+          "price": 240.0
+        },
+        {
+          "row": "23",
+          "price": 256.0
+        },
+        {
+          "row": "25",
+          "price": 257.0
+        },
+        {
+          "row": "20",
+          "price": 310.0
+        },
+        {
+          "row": "7",
+          "price": 359.0
+        },
+        {
+          "row": "9",
+          "price": 369.0
+        },
+        {
+          "row": "1",
+          "price": 466.0
+        },
+        {
+          "row": "5",
+          "price": 529.5
+        }
+      ]
+    },
+    "LOGE11": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "17",
+          "price": 296.0
+        },
+        {
+          "row": "17",
+          "price": 338.0
+        },
+        {
+          "row": "3",
+          "price": 489.0
+        },
+        {
+          "row": "1",
+          "price": 751.0
+        }
+      ]
+    },
+    "LOGE12": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "18",
+          "price": 339.0
+        },
+        {
+          "row": "17",
+          "price": 355.0
+        },
+        {
+          "row": "16",
+          "price": 365.0
+        },
+        {
+          "row": "9",
+          "price": 417.0
+        },
+        {
+          "row": "8",
+          "price": 433.0
+        },
+        {
+          "row": "12",
+          "price": 438.0
+        },
+        {
+          "row": "7",
+          "price": 444.0
+        },
+        {
+          "row": "12",
+          "price": 454.0
+        },
+        {
+          "row": "6",
+          "price": 459.0
+        },
+        {
+          "row": "11",
+          "price": 480.0
+        },
+        {
+          "row": "13",
+          "price": 660.0
+        },
+        {
+          "row": "2",
+          "price": 756.0
+        }
+      ]
+    },
+    "LOGE13": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "17",
+          "price": 313.0
+        },
+        {
+          "row": "17",
+          "price": 339.0
+        },
+        {
+          "row": "13",
+          "price": 380.0
+        },
+        {
+          "row": "13",
+          "price": 417.0
+        },
+        {
+          "row": "16",
+          "price": 418.0
+        },
+        {
+          "row": "3",
+          "price": 489.0
+        },
+        {
+          "row": "4",
+          "price": 529.5
+        },
+        {
+          "row": "6",
+          "price": 529.5
+        },
+        {
+          "row": "13",
+          "price": 626.0
+        },
+        {
+          "row": "3",
+          "price": 742.0
+        },
+        {
+          "row": "2",
+          "price": 886.0
+        },
+        {
+          "row": "1",
+          "price": 1033.0
+        }
+      ]
+    },
+    "LOGE14": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "2",
+          "price": 489.0
+        }
+      ]
+    },
+    "LOGE15": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "21",
+          "price": 235.0
+        },
+        {
+          "row": "23",
+          "price": 235.0
+        },
+        {
+          "row": "24",
+          "price": 246.0
+        },
+        {
+          "row": "24",
+          "price": 251.0
+        },
+        {
+          "row": "23",
+          "price": 256.0
+        },
+        {
+          "row": "22",
+          "price": 260.0
+        },
+        {
+          "row": "18",
+          "price": 261.0
+        },
+        {
+          "row": "21",
+          "price": 306.0
+        },
+        {
+          "row": "24",
+          "price": 306.0
+        }
+      ]
+    },
+    "LOGE16": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "25",
+          "price": 230.0
+        },
+        {
+          "row": "26",
+          "price": 235.0
+        },
+        {
+          "row": "12",
+          "price": 240.0
+        },
+        {
+          "row": "22",
+          "price": 256.0
+        },
+        {
+          "row": "26",
+          "price": 260.0
+        },
+        {
+          "row": "18",
+          "price": 261.0
+        },
+        {
+          "row": "14",
+          "price": 272.0
+        },
+        {
+          "row": "13",
+          "price": 277.0
+        },
+        {
+          "row": "11",
+          "price": 300.0
+        },
+        {
+          "row": "11",
+          "price": 356.0
+        }
+      ]
+    },
+    "LOGE17": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "16",
+          "price": 235.0
+        },
+        {
+          "row": "15",
+          "price": 251.0
+        },
+        {
+          "row": "13",
+          "price": 261.0
+        },
+        {
+          "row": "11",
+          "price": 274.0
+        },
+        {
+          "row": "20",
+          "price": 292.0
+        },
+        {
+          "row": "11",
+          "price": 343.0
+        }
+      ]
+    },
+    "LOGE18": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "15",
+          "price": 235.0
+        },
+        {
+          "row": "21",
+          "price": 235.0
+        },
+        {
+          "row": "12",
+          "price": 248.0
+        },
+        {
+          "row": "14",
+          "price": 249.0
+        },
+        {
+          "row": "14",
+          "price": 264.0
+        },
+        {
+          "row": "11",
+          "price": 285.0
+        },
+        {
+          "row": "21",
+          "price": 287.0
+        },
+        {
+          "row": "20",
+          "price": 302.0
+        },
+        {
+          "row": "12",
+          "price": 338.0
+        },
+        {
+          "row": "12",
+          "price": 348.0
+        }
+      ]
+    },
+    "LOGE19": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "24",
+          "price": 220.0
+        },
+        {
+          "row": "19",
+          "price": 229.0
+        },
+        {
+          "row": "24",
+          "price": 230.0
+        },
+        {
+          "row": "14",
+          "price": 234.0
+        },
+        {
+          "row": "12",
+          "price": 235.0
+        },
+        {
+          "row": "13",
+          "price": 240.0
+        },
+        {
+          "row": "25",
+          "price": 240.0
+        },
+        {
+          "row": "11",
+          "price": 250.0
+        },
+        {
+          "row": "25",
+          "price": 251.0
+        },
+        {
+          "row": "14",
+          "price": 287.0
+        },
+        {
+          "row": "26",
+          "price": 292.0
+        },
+        {
+          "row": "23",
+          "price": 309.0
+        },
+        {
+          "row": "11",
+          "price": 377.0
+        }
+      ]
+    },
+    "LOGE20": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "22",
+          "price": 257.0
+        },
+        {
+          "row": "20",
+          "price": 258.0
+        },
+        {
+          "row": "14",
+          "price": 261.0
+        },
+        {
+          "row": "19",
+          "price": 261.0
+        },
+        {
+          "row": "24",
+          "price": 262.0
+        },
+        {
+          "row": "11",
+          "price": 316.0
+        },
+        {
+          "row": "2",
+          "price": 489.0
+        },
+        {
+          "row": "5",
+          "price": 529.5
+        },
+        {
+          "row": "1",
+          "price": 705.0
+        }
+      ]
+    },
+    "LOGE21": {
+      "currency": "$",
+      "rows": [
+        {
+          "row": "13",
+          "price": 293.0
+        },
+        {
+          "row": "18",
+          "price": 355.0
+        },
+        {
+          "row": "13",
+          "price": 376.0
+        },
+        {
+          "row": "3",
+          "price": 489.0
+        },
+        {
+          "row": "6",
+          "price": 529.5
+        },
+        {
+          "row": "7",
+          "price": 702.0
+        }
+      ]
+    }
+  },
+  "recommendations": [
+    "Section: BAL313, Row: 15, Harga: $ 116.0",
+    "Section: BAL319, Row: 13, Harga: $ 116.0",
+    "Section: BAL322, Row: 14, Harga: $ 116.0",
+    "Section: BAL307, Row: 14, Harga: $ 116.0",
+    "Section: BAL321, Row: 11, Harga: $ 117.0",
+    "Section: BAL326, Row: 15, Harga: $ 117.0",
+    "Section: BAL327, Row: 15, Harga: $ 117.0",
+    "Section: BAL322, Row: 13, Harga: $ 117.0"
+  ],
+  "count": {
+    "section": 57,
+    "row": 332
+  }
+}

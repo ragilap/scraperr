@@ -1,0 +1,11 @@
+asyncio
+celery
+pymongo
+validators
+fastapi
+pydantic
+playwright
+natsort
+aiofiles
+uvicorn
+redis

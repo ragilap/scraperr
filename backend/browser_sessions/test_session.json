@@ -1,0 +1,463 @@
+{
+  "cookies": [
+    {
+      "name": "eps_sid",
+      "value": "a17c6e5edb6751f7a6eff5fde2a3549f797bfbb3",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1743529605.29436,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "tmpt",
+      "value": "0:48480ea1ee000000:1740937611:53f83928:ff4b563feae2c40c60703a06d4f9b498:641956bddd61da05d96980901fdf91a23596a5316f883b90b65a29315ce6bf3e",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1740941211.298135,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mt.v",
+      "value": "2.1399700014.1740937617174",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1775497618.851725,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.435113863.1740937618",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1748713618,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mt.pc",
+      "value": "2.1",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "TMUO",
+      "value": "west_jC+qr3ySCkYsk1Mj1BRp1ubMR7hrdLNhGMCrBu5/I1Q=",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mt.g.2f013145",
+      "value": "2.1399700014.1740937617174",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_au_1d",
+      "value": "AU1D02000017409376223PNXM30DGU6Q",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1772473621.96569,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_tq_id.TV-5454815427-1.e79f",
+      "value": "14f664bc31c3e8af.1740937623.0.1740937623..",
+      "domain": "www.ticketmaster.ca",
+      "path": "/",
+      "expires": 1775497623.170852,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_C1T806G4DF",
+      "value": "GS1.1.1740937623.1.0.1740937623.60.0.0",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1775497623.994729,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_H1KKSGW33X",
+      "value": "GS1.1.1740937624.1.0.1740937624.60.0.0",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1775497624.15047,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.1544559817.1740937624",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1775497640.175454,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.1374831252.1740937625",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1741024040,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_dc_gtm_UA-60025178-1",
+      "value": "1",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1740937684,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_scid",
+      "value": "5NrZ1qX_ij6urwGhGW-NcbLvlVMJJMvR",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1775124323,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ScCbts",
+      "value": "%5B%5D",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1741542426,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "seerses",
+      "value": "e",
+      "domain": ".www.ticketmaster.ca",
+      "path": "/",
+      "expires": 1740939428,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "audit_p",
+      "value": "1|NU0wFQJKg+p9z1/uHZRNzjJU3RnXR7mhVFDO704wB59tL+blsTY5f0faZSb7Du1Xr4mGPn8xyI+M1KxoLazIt9i2Wk5FrGos0XY24Ec+XLv3bGf0nNJlG4oFChun5RvXhdcj4BHHUbS+yqsk5q2KhcgAWMy5VpapmNl/1iGzYadbOz6AjJtUa8ZnH3r7x5VAdeodiyl5GGjkt77VmXBK7kiCfUmSYXqD+ohH/uuQN8oOr/S07bYDcYQkZmofZQkSVSwKu1RXSJT0/fhu8/pkBO4VeIulq+4M1TRwmTZWV3Xc6UO785F0Pw==",
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "expires": 1772473629.317872,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "khaos_p",
+      "value": "M7RXBBVB-T-CNBO",
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "expires": 1772473629.318061,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_sctr",
+      "value": "1%7C1740891600000",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1775124327,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "TM_PIXEL",
+      "value": "{\"_dvs\":\"0:m7rxbc5u:_7b3ggw2nN7FNsA_OzfwHvUFX8rxkkF8\",\"_dvp\":\"0:m7rxbc5u:qQtJj0oEYnZ11n1GLMGSM4GMGVgV6ORN\"}",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dvs",
+      "value": "0:m7rxbc5u:_7b3ggw2nN7FNsA_OzfwHvUFX8rxkkF8",
+      "domain": "www.ticketmaster.ca",
+      "path": "/",
+      "expires": 1740939429.529525,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dvp",
+      "value": "0:m7rxbc5u:qQtJj0oEYnZ11n1GLMGSM4GMGVgV6ORN",
+      "domain": "www.ticketmaster.ca",
+      "path": "/",
+      "expires": 1775497629.529722,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__spdt",
+      "value": "a78dffc5206c41bf87fc6f41470137d5",
+      "domain": "www.ticketmaster.ca",
+      "path": "/",
+      "expires": 1772473633,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_uetsid",
+      "value": "5d7165e0f78e11ef9b929b58d536be7e",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1741024034,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_uetvid",
+      "value": "5d718230f78e11ef8afe2ffb383ec435",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1774633634,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_pn",
+      "value": "eyJzdWIiOnsidWRyIjowLCJpZCI6IldWdk81R1FZTGhZTGI2Z3owemlybXlvN09sNUJSbDl5Iiwic3MiOi0xfSwibHVhIjoxNzQwOTM3NjM1MDUwfQ",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1756489635,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_rdt_uuid",
+      "value": "1740937626105.5ba7a3da-07ae-419f-bd1c-ff50fb3e52ad",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1748713637,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_scid_r",
+      "value": "8FrZ1qX_ij6urwGhGW-NcbLvlVMJJMvR1Feasw",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1775124335,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "XID",
+      "value": "171295f4ba41704f2337ffe1740937637",
+      "domain": ".scorecardresearch.com",
+      "path": "/",
+      "expires": 1774633638.192139,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cs_c",
+      "value": "0",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1775101639,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cs_cvars",
+      "value": "%7B%221%22%3A%5B%22Page%20Name%22%2C%22TM_CA%3A%20CCP%20EDP%3A%20RS%3A%20Onsale%22%5D%2C%222%22%3A%5B%22Page%20Type%22%2C%22CCP%20EDP%3A%20Onsale%22%5D%2C%223%22%3A%5B%22Modules%20Available%22%2C%22EDP_RseAllinPricing_OldNeedtoKnowCal%22%5D%2C%224%22%3A%5B%22Platform%22%2C%22ccp-edp%22%5D%2C%225%22%3A%5B%22Login%20Status%22%2C%22Not%20Logged%20In%22%5D%2C%226%22%3A%5B%22Major%20Category%22%2C%22Music%22%5D%2C%227%22%3A%5B%22Minor%20Category%22%2C%22Rock%22%5D%2C%228%22%3A%5B%22Artist%20ID%22%2C%22703831%22%5D%2C%229%22%3A%5B%22Artist%20Name%22%2C%22LINKIN%20PARK%22%5D%2C%2210%22%3A%5B%22Venue%20ID%22%2C%22139269%22%5D%2C%2211%22%3A%5B%22Event%20ID%22%2C%221100616D8D0D22C7%22%5D%2C%2212%22%3A%5B%22Event%20Date%22%2C%229%2F21%2F2025%22%5D%2C%2213%22%3A%5B%22EDP%20Page%20Type%22%2C%22CCP%20EDP%3A%20SIM%22%5D%2C%2214%22%3A%5B%22Event%20Type%22%2C%22STANDARD%22%5D%7D",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cs_id",
+      "value": "1d2ce4d1-4686-a7ef-ef54-f4da27a132cd.1740937639.1.1740937639.1740937639.1723134244.1775101639330.1",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1775101639,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonGroups",
+      "value": ",C0001,",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1772473639,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonConsent",
+      "value": "isGpcEnabled=0&datestamp=Sun+Mar+02+2025+12%3A47%3A19+GMT-0500+(Eastern+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=90b4c0f4-1ea2-4f66-af7d-73c53fcba08f&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fwww.ticketmaster.ca%2Flinkin-park-from-zero-world-tour-vancouver-british-columbia-09-21-2025%2Fevent%2F1100616D8D0D22C7%3Fjs_render%3Dtrue%26premium_proxy%3Dtrue&groups=C0001%3A1%2CC0003%3A0%2CC0002%3A0%2CC0004%3A0",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1772473639,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dc_gtm_UA-60025178-2",
+      "value": "1",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1740937700,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cs_s",
+      "value": "1.0.1.9.1740939440911",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1740939440,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_fbp",
+      "value": "fb.1.1740937641701.391539419558977672",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1748713646,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__qca",
+      "value": "P0-2048702323-1740937645950",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1774806447,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.ticketmaster.ca",
+      "localStorage": [
+        {
+          "name": "u_sclid",
+          "value": "EPPjAncpVxKsqWYrNgEmvVkHr4_bXpi15NrZ1qX_ij6urwGhGW-NcbLvlVMJJMvR"
+        },
+        {
+          "name": "_uetvid_exp",
+          "value": "Fri, 27 Mar 2026 17:47:14 GMT"
+        },
+        {
+          "name": "TM_PRICING_AGREEMENT_LAST_ACCEPTED_TIME",
+          "value": "1740937662702"
+        },
+        {
+          "name": "pn_ll",
+          "value": "none"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AP_l5mOy1aao2cyGFJj2_MjVws8KM63NENfVgIDAJD3D_8Yb7NjDno5IsG4eA_8ph0ZuW7sazjPmosi9DdkpIqoCK2cMh5_w604X_4mStKgjNBhsIer-9aXMniO75STF"
+        },
+        {
+          "name": "_uetsid",
+          "value": "5d7165e0f78e11ef9b929b58d536be7e"
+        },
+        {
+          "name": "u_sclid_r",
+          "value": "LHPjAncpVxKsqWYrNgEmvVkHr4_bXpi18fkz__Ba2dal_4o-rq8BoRlvjXGy75VTCSTL0dRXmrM"
+        },
+        {
+          "name": "_uetsid_exp",
+          "value": "Mon, 03 Mar 2025 17:47:14 GMT"
+        },
+        {
+          "name": "ualdebug",
+          "value": "off"
+        },
+        {
+          "name": "_uetvid",
+          "value": "5d718230f78e11ef8afe2ffb383ec435"
+        },
+        {
+          "name": "au/1d",
+          "value": "{\"v\":\"AU1D02000017409376223PNXM30DGU6Q\",\"e\":0}"
+        },
+        {
+          "name": "__qca",
+          "value": "{\"value\":\"P0-2048702323-1740937645950\",\"expiry\":1774806447567}"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "ZjE5eWZ5MWVzc2ZqdA=="
+        },
+        {
+          "name": "rc::f",
+          "value": "0aABmdjBPeF1vmPh9LoFAyjTPZtlAiW0Xm1qoFiSy_HfQPxTqkTRsqok5pdcaQpBnZz3EGVwA"
+        }
+      ]
+    }
+  ],
+  "timestamp": "2025-03-03T00:47:52.995207"
+}
