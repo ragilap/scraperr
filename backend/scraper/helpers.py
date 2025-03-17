@@ -66,7 +66,38 @@ async def detect_and_click_button(page, xpath_selector=None, description=None, o
         else:
             raise ValueError(f"{description} Not Detected, Stopping...")
 
+async def click_button_strict(page, xpath_selector=None, description=None, optional=False,  timeout=20000,index=None):
+    try:
+        if xpath_selector:
+            await page.wait_for_selector(xpath_selector, state='visible', timeout=timeout)
+            
+            elements = page.locator(xpath_selector)
+            count = await elements.count()
 
+            if count == 0:
+                raise ValueError(f"{description} Not Detected, Stopping...")
+            elif count == 1 or index is None:
+                await elements.first.click()
+                print(f"{description} Detected and Clicked")
+            elif index is not None and 0 <= index < count:
+                await elements.nth(index).click()
+                print(f"{description} (Element #{index}) Detected and Clicked")
+            else:
+                raise IndexError(f"Invalid index {index}. Only {count} elements found.")
+        else:
+            raise ValueError(f"{description} Not Detected, Stopping...")
+
+    except Exception as e:
+        if optional:
+            print(f"{description} Not Detected, Continuing... Error: {e}")
+        else:
+            raise ValueError(f"{description} Not Detected, Stopping... Error: {e}")
+async def ensure_element_visible(page, xpath_selector, timeout=30000):
+    try:
+        await page.wait_for_selector(xpath_selector, state='visible', timeout=timeout)
+        print("Element is visible.")
+    except:
+        print("Element not visible within the timeout.")
 
 # Function to extract and print the desired data
 async def print_section_data(section_name, section_data, currency):

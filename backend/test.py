@@ -1,15 +1,16 @@
 import uuid
 import os
 import random
-import asyncio
 import time
+import asyncio
 from playwright.async_api import async_playwright
 from scraper.session_manager import SessionManager
-from scraper.helpers import detect_and_click_button, process_result_data, count_execution_time
+from scraper.helpers import detect_and_click_button, count_execution_time,ensure_element_visible,click_button_strict
 from scraper.ticket_data import extract_ticket_data, save_or_update_file
 
+ZENROWS_API_KEY = "5301c7a60c1e5df1ba5aa297caa2e47b94de5a73"
 
-async def scrape_with_session(url=None, session_name="default_session", output_filename=None):
+async def scrape_with_session(url=None, session_name="default_session", output_filename=None, username=None, password=None, section=None, row=None):
     if url is None:
         raise ValueError("URL cannot be None.")
 
@@ -27,14 +28,14 @@ async def scrape_with_session(url=None, session_name="default_session", output_f
 
     async with async_playwright() as p:
         print("Connecting to Ticketmaster via ZenRows Proxy...")
-        
-       
-        browser = await p.chromium.launch(headless=False,proxy={
-            "server": "http://64.112.56.196:23078",
-            "username": "hZRIDCop",
-            "password": "ZzLBTpTi"
-        })
 
+        # browser = await p.chromium.launch(headless=False, proxy={
+        #     "server": "http://64.112.56.196:23078",
+        #     "username": "hZRIDCop",
+        #     "password": "ZzLBTpTi"
+        # })
+
+        browser = await p.chromium.launch(headless=False)
         print("Checking existing session...")
         session_manager = SessionManager()
 
@@ -52,7 +53,7 @@ async def scrape_with_session(url=None, session_name="default_session", output_f
             await page.goto(url, wait_until='load', timeout=0)
 
             print("Detected Title:", await page.title())
-            await page.wait_for_timeout(5000)  
+            await page.wait_for_timeout(12000)
             print("Page loaded successfully, begin scraping...")
 
             await detect_and_click_button(
@@ -78,15 +79,15 @@ async def scrape_with_session(url=None, session_name="default_session", output_f
 
             best_seats_selector = '//div[@data-bdd="sort-buttons-container"]//span[@data-bdd="quick-picks-sort-button-best"]'
 
-            print("double check accept button")
-            await detect_and_click_button(
+            try:
+                print("double check accept button")
+                await detect_and_click_button(
                 page,
                 xpath_selector='//button[@data-bdd="accept-modal-accept-button"]',
                 description="Accept & Continue",
                 optional=True,
                 timeout=3000
             )
-            try:
                 print("Checking for 'Best Seats' button...")
                 await page.wait_for_selector(best_seats_selector, state='attached', timeout=10000)
                 await detect_and_click_button(page, xpath_selector=best_seats_selector, description="BEST SEATS")
@@ -149,16 +150,83 @@ async def scrape_with_session(url=None, session_name="default_session", output_f
                 execution_time = await count_execution_time(start_time, time.time())
                 print(f"Execution time for scroll attempt {scroll_attempts} is {execution_time}.")
 
-            all_ticket_data = await extract_ticket_data(page)
-            await save_or_update_file(url, page, all_ticket_data, output_filename)
-            await process_result_data(output_filename)
+                # if section and row:
+                #     # section_row_selector = f'//div[@class="sc-564d33a0-5 bblocI"]//span[@aria-label="Sec {section} • Row {row}"]'
+                #     section_row_selector = f'//div[@data-bbd="quick-pick-ticket-info"]//span[@aria-label="Sec {section} • Row {row}"]'
+                #     try:
+                #         print(f"Checking for section {section} and row {row}...")
+                #         element = await page.query_selector(section_row_selector)
+                #         if element:
+                #             print(f"Section {section} and row {row} found, clicking...")
+                #             await element.click()
+                #             break
+                #         else:
+                #             print(f"Section {section} and row {row} not found, continuing to scroll...")
+                #     except Exception as e:
+                #         print(f"Warning: Unable to check for section {section} and row {row}! {e}")
+
+            if not request_detected:
+                print("Scrolling to the bottom to continue searching...")
+                await press_end_button(page)
+                await perform_random_wait('Scroll to bottom', timeout=2000)
+
+                if section and row:
+                    section_row_selector = f'//div[@data-bdd="quick-pick-ticket-info"]//span[@aria-label="Sec {section} • Row {row}"]'
+                    try:
+                        print(f"Checking for section {section} and row {row} after scrolling to the bottom...")
+                        element = await page.query_selector(section_row_selector)
+                        if element:
+                            print(f"Section {section} and row {row} found, clicking...")
+                            await element.click()
+                        else:
+                            print(f"Section {section} and row {row} not found after scrolling to the bottom.")
+                    except Exception as e:
+                        print(f"Warning: Unable to check for section {section} and row {row} after scrolling to the bottom! {e}")
+
+            order_breakdown_button_selector = '//button[@data-bdd="order-breakdown-toggle-button"]'
+            try:
+                await ensure_element_visible(page, order_breakdown_button_selector, timeout=30000)
+                print("Trying to click 'Order Breakdown' button...")
+                # await detect_and_click_button(page, xpath_selector=order_breakdown_button_selector,description="Order Breakdown", timeout=20000)
+                await click_button_strict(
+                    page, 
+                    xpath_selector='//button[@data-bdd="order-breakdown-toggle-button"]', 
+                    description="Order Breakdown", 
+                    index=1,
+                    timeout=10000
+                )
+
+            except Exception as e:
+                print(f"Warning: Unable to click 'Order Breakdown' button! {e}")
+
+            try:
+                await page.wait_for_selector('//div[@class="sc-1f896568-5 cNaoda" and contains(text(), "Face Value")]/following-sibling::div', state='visible', timeout=30000)
+                face_value = await page.text_content('//div[@class="sc-1f896568-5 cNaoda" and contains(text(), "Face Value")]/following-sibling::div')
+                service_fee = await page.text_content('//div[@class="sc-1f896568-5 cNaoda" and contains(text(), "Service Fee")]/following-sibling::div')
+                order_processing_fee = await page.text_content('//div[@class="sc-1f896568-5 cNaoda" and contains(text(), "Order Processing Fee")]/following-sibling::div')
+
+                print(f"Face Value: {face_value}")
+                print(f"Service Fee: {service_fee}")
+                print(f"Order Processing Fee: {order_processing_fee}")
+
+            except Exception as e:
+                print(f"Error extracting order breakdown data: {str(e)}")
+
+            try:
+                print("click button next")
+                await(detect_and_click_button(page, xpath_selector='//button[@data-bdd="offer-card-buy-button"]', optional=True,description="Next", timeout=20000))
+            except Exception as e:  
+                print(f"Error clicking 'Next' button: {str(e)}")
 
         except Exception as e:
             print(f"Error during scraping: {str(e)}")
         finally:
-            await browser.close()
+            print("automate queue done! Press Enter to close the browser...")
+            input()
 
-    print(f"Scraping completed! Data saved in {output_filename}")
+
 if __name__ == "__main__":
-    test_url = "https://www.ticketmaster.com/james-taylor-boston-massachusetts-08-26-2025/event/0100625AB1B2563C"
-    asyncio.run(scrape_with_session(test_url, output_filename="test_output.json"))
+    target_section = "319"
+    target_row = "11"
+    test_url = "https://www.ticketmaster.ca/linkin-park-from-zero-world-tour-vancouver-british-columbia-09-21-2025/event/1100616D8D0D22C7"
+    asyncio.run(scrape_with_session(test_url, section=target_section, row=target_row, output_filename="test_output.json"))

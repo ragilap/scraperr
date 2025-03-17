@@ -13,15 +13,12 @@ async def scrape_with_session(url=None, session_name="default_session", output_f
     if url is None:
         raise ValueError("URL cannot be None.")
 
-    # Generate UUID jika tidak ada session_name
     if session_name is None:
         session_name = str(uuid.uuid4())
 
-    # Pastikan folder 'result' ada
     output_dir = "result"
     os.makedirs(output_dir, exist_ok=True)
 
-    # Jika output_filename tidak diberikan, buat berdasarkan UUID
     if output_filename is None:
         output_filename = os.path.join(output_dir, f"{session_name}.json")
 

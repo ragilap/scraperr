@@ -1,64 +1,104 @@
 {
   "cookies": [
     {
-      "name": "eps_sid",
-      "value": "2c62fa0f310a862c12fc1c3b70239c30a5e7e338",
-      "domain": ".ticketmaster.ca",
-      "path": "/",
-      "expires": 1744455260,
-      "httpOnly": true,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "tmpt",
-      "value": "0:be0cf34bee000000:1741863276:547d2a2a:26be20f8a63ef80f736eb03084dcc7b2:0fb64b292bd7ecd822a62886a6690e6ffa93e7797593fc758736961307c3d4a5",
-      "domain": ".ticketmaster.ca",
-      "path": "/",
-      "expires": 1741866879,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "lightstep_guid%2Fco2.sdk",
-      "value": "4667e54f28dfb833",
-      "domain": "www.ticketmaster.ca",
-      "path": "/",
-      "expires": 1742468084,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "lightstep_session_id",
-      "value": "0a5cc44c4b797fc5",
-      "domain": "www.ticketmaster.ca",
-      "path": "/",
-      "expires": 1742468084,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "_gcl_au",
-      "value": "1.1.1371572055.1741863288",
-      "domain": ".ticketmaster.ca",
-      "path": "/",
-      "expires": 1749639287,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
       "name": "_GRECAPTCHA",
-      "value": "09AP_l5mNkiXf8bT3hk99CI9d5o13r0ZZDeUDPzqODIZFbdZgfPFUGl3fuLY9dEhCZustm_uAwuY1G3FSW82J3apA",
+      "value": "09ALcxeyptQJMDTphsCrhR1WHI2GNyOSjkahtm0LdZCMwJY7jAvLjaQkhEJUWkZ_z99zA6f6y3Hx6446aVb1V2dxs",
       "domain": "www.google.com",
       "path": "/recaptcha",
-      "expires": 1757415274,
+      "expires": 1757719478.87367,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
+    },
+    {
+      "name": "eps_sid",
+      "value": "5bab090601633ee5405e8b4f10a383a6744c9009",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1744759469.335108,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "tmpt",
+      "value": "0:e68dbad69e000000:1742167479:2b87c47d:6026fd0eea79213cf3b3fa1295c026fc:ac4d3391a4df3cd8719a9f8a0f26b2f9659681755f9bada08fa319ae3c6601bd",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1742171079.777889,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "lightstep_guid%2Fco2.sdk",
+      "value": "120242682c6320ae",
+      "domain": "www.ticketmaster.ca",
+      "path": "/",
+      "expires": 1742772284,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "lightstep_session_id",
+      "value": "6d11baa65c41e23c",
+      "domain": "www.ticketmaster.ca",
+      "path": "/",
+      "expires": 1742772284,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mt.v",
+      "value": "2.1725756395.1742167486684",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1776727488.881542,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.232611563.1742167488",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": 1749943488,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mt.pc",
+      "value": "2.1",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "TMUO",
+      "value": "east_LV/6jWV4bw9cbSg1eVDf2fLYYy4EoaySAfSp7mS+E98=",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mt.g.2f013145",
+      "value": "2.1725756395.1742167486684",
+      "domain": ".ticketmaster.ca",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
     }
   ],
   "origins": [
@@ -66,8 +106,16 @@
       "origin": "https://www.ticketmaster.ca",
       "localStorage": [
         {
+          "name": "ualdebug",
+          "value": "off"
+        },
+        {
           "name": "_grecaptcha",
-          "value": "09AP_l5mOm0tviop5CN61YZzHHMxcCdyHSEZkH3HEpX5lJ-sVPLAa18MYrnMKQvjG-peoF-x_7bcwDppFEVe5l6GZt9KuJlELuzQuCysR4rUPU3VSZXkAwZ0oB-hV2xuxC"
+          "value": "09ALcxeyoX62p9B0g6iYfFqkL7HWC2WBCFqTKrymf4GjlcJaVT6vtPUfx5tp6Vbg3Xl_IJjEseZHbkA_K7eUuXQfYhTl0npobZRQ3B_yALEZmOJREIx-kRTxa8TEVw_xI3"
+        },
+        {
+          "name": "TM_PRICING_AGREEMENT_LAST_ACCEPTED_TIME",
+          "value": "1742167491386"
         }
       ]
     },
@@ -75,15 +123,24 @@
       "origin": "https://www.google.com",
       "localStorage": [
         {
-          "name": "rc::f",
-          "value": "0aAIqooPqo9y3YIhMXCa35_xbYNEzfBL7pmRcMqf_-OnmgmCRauR7nys3f48JI60_5qKAa0_w"
+          "name": "rc::a",
+          "value": "MTF2NWEzODFuMnpyZTM="
         },
         {
-          "name": "rc::a",
-          "value": "MW96ZzJkbTFmeXd2bDE="
+          "name": "rc::f",
+          "value": "0aAJS7Tl-BwYUFfewBODxRlSYXlG11lwrd3ddfM-FdzwxAGY8ACJ3mjwJZG7GCLDcwGvlvItQ"
+        }
+      ]
+    },
+    {
+      "origin": "https://sb.monetate.net",
+      "localStorage": [
+        {
+          "name": "mt.g.2f013145",
+          "value": "2.1725756395.1742167486684"
         }
       ]
     }
   ],
-  "timestamp": "2025-03-13T17:54:50.272377"
+  "timestamp": "2025-03-17T06:24:51.655818"
 }

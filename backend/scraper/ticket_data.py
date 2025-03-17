@@ -13,7 +13,7 @@ async def extract_ticket_data(page):
     max_length = await row_items.count()
 
     # Gather all async operations to be run in parallel
-    tasks = []
+    tasks = []  
 
     for i in range(max_length):
         tasks.append(extract_ticket_from_row(row_items, i))
@@ -27,7 +27,7 @@ async def extract_ticket_data(page):
     print(f"Successfully extracted {max_length} data in {execution_time}.")
     
     return {'ticket_data': ticket_data}
-
+    
 # Helper function to extract data from a single row
 async def extract_ticket_from_row(row_items, index):
     row = row_items.nth(index)
