@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from celery.result import AsyncResult
 from pymongo import MongoClient
 from datetime import datetime, timedelta
-from tasks import scrape_task
+from tasks import scrape_task, booking_process
 import validators
 
 # FastAPI app setup
@@ -35,6 +35,12 @@ class ScrapeRequest(BaseModel):
     url: str
     code: str
 
+class AutomateQueueRequest(BaseModel):
+    section: str
+    row: str
+    url: str
+    
+
 # Home Route (Welcome Page)
 @app.get("/api/")
 async def welcome():
@@ -43,6 +49,7 @@ async def welcome():
 # Scrape URL Route
 @app.post("/api/scrape")
 async def scrape(scrape_request: ScrapeRequest):
+    
     url = scrape_request.url
     code = scrape_request.code
     if code != "TRIAL":
@@ -98,6 +105,32 @@ async def scrape(scrape_request: ScrapeRequest):
         "task_id": task.id
     }
 
+
+#automate queue
+@app.post("/api/booking")
+async def automate_queue(queue_request: AutomateQueueRequest):
+    section = queue_request.section
+    row = queue_request.row
+    url = queue_request.url
+    
+    if not validators.url(url):
+        return {
+            "status": "error",
+            "message": f"URL {url} is invalid.",
+        }  
+    task = booking_process.apply_async(args=[url,section,row])
+    collection.insert_one({
+        "task_id": task.id,
+        "url" : url,
+        "row" : row,
+        "section" : section,
+        "status": "pending",
+    })
+    return {
+        "status": "pending",
+        "message": f"The request to scrape URL {url} is now in progress.",
+        "task_id": task.id
+    }
 # Status Check Route
 @app.get("/api/status/{task_id}")
 async def get_task_status(task_id: str):

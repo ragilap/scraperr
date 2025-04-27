@@ -1,0 +1,88 @@
+# --- NEXT.JS (Frontend) ---
+
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor folders
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# --- FASTAPI + CELERY + SCRAPER (Backend) ---
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment files
+.env
+
+# Database / cache
+*.sqlite3
+*.db
+
+# Playwright cache
+.playwright/
+playwright-report/
+
+# Pytest / Test cache
+.pytest_cache/
+.mypy_cache/
+.pyright/
+.dmypy.json
+dmypy.json
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Celery related (if you store any temp or PID files)
+celerybeat-schedule
+celerybeat.pid
+
+# Coverage reports
+.coverage
+htmlcov/
+coverage.xml
+nosetests.xml
+*.cover
+
+# Log files
+*.log
+
+# Editor folders
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db

@@ -1,8 +1,11 @@
 from datetime import datetime
 import json
+import time
+import random
 import re
 import aiofiles
 from natsort import natsorted
+import asyncio
 
 def convert_date(date_str):
     try:
@@ -66,32 +69,110 @@ async def detect_and_click_button(page, xpath_selector=None, description=None, o
         else:
             raise ValueError(f"{description} Not Detected, Stopping...")
 
-async def click_button_strict(page, xpath_selector=None, description=None, optional=False,  timeout=20000,index=None):
+async def click_button_strict(page, xpath_selector, description="Button", index=0, timeout=10000):
+    """Klik tombol berdasarkan XPath dengan dukungan index jika ada lebih dari satu tombol."""
     try:
-        if xpath_selector:
-            await page.wait_for_selector(xpath_selector, state='visible', timeout=timeout)
-            
-            elements = page.locator(xpath_selector)
-            count = await elements.count()
+        print(f"Trying to click '{description}' button...")
 
-            if count == 0:
-                raise ValueError(f"{description} Not Detected, Stopping...")
-            elif count == 1 or index is None:
-                await elements.first.click()
-                print(f"{description} Detected and Clicked")
-            elif index is not None and 0 <= index < count:
-                await elements.nth(index).click()
-                print(f"{description} (Element #{index}) Detected and Clicked")
+        await page.wait_for_selector(xpath_selector, timeout=timeout)
+
+        buttons = await page.locator(xpath_selector).all()
+
+        if len(buttons) > 0:
+            print(f"Ditemukan {len(buttons)} tombol, mencoba klik tombol dengan index {index}...")
+
+            if index < len(buttons):
+                await buttons[index].click()
+                print(f"Berhasil mengklik '{description}' button dengan index {index}!")
             else:
-                raise IndexError(f"Invalid index {index}. Only {count} elements found.")
+                print(f"Index {index} melebihi jumlah tombol yang ditemukan ({len(buttons)}), menggunakan tombol pertama.")
+                await buttons[0].click()
         else:
-            raise ValueError(f"{description} Not Detected, Stopping...")
+            print(f"Tombol '{description}' tidak ditemukan!")
 
     except Exception as e:
-        if optional:
-            print(f"{description} Not Detected, Continuing... Error: {e}")
-        else:
-            raise ValueError(f"{description} Not Detected, Stopping... Error: {e}")
+        print(f"Error saat mengklik '{description}': {e}")
+
+async def detect_and_click_aria_disable(page, xpath_selector: str, description: str, timeout: int = 15000):
+    print(f"Looking for {description} button...")
+    # Tunggu tombol kelihatan dulu
+    await page.wait_for_selector(xpath_selector, state="visible", timeout=timeout)
+    
+    button = page.locator(xpath_selector)
+
+    try:
+        await button.click(force=True)
+        print(f"Clicked {description} button!")
+    except Exception as e:
+        print(f"Click failed: {e}")
+        raise Exception(f"Failed to click {description} button")
+
+async def custom_human_scroll(page,selector):
+    """Scroll ke bawah secara bertahap seperti manusia hingga mencapai akhir halaman."""
+    scroll_attempts = random.randint(3, 6)
+    scroll_pause_time = random.uniform(0.5, 1.5)
+
+    element = await page.query_selector(selector)
+    if not element:
+        print(f"Element with selector '{selector}' not found.")
+        return
+
+    for attempt in range(scroll_attempts):
+        scroll_distance = random.randint(200, 600)
+
+        print(f"[Scroll Attempt {attempt+1}] Scrolling down {scroll_distance} pixels...")
+        await page.evaluate(f'''
+            (element) => {{
+                element.scrollBy(0, {scroll_distance});
+            }}
+        ''', element)
+        await asyncio.sleep(scroll_pause_time)  # Jeda seperti manusia
+
+    print("[Human Scroll] Scrolling finished!")
+
+async def handler_queue(page, timeout_initial=10000, ):
+    print("Checking queue status...")
+
+    try:
+        test = 'h3[data-bdd="statusСard-heading"]'
+        await page.wait_for_selector(test, state="visible", timeout=timeout_initial)
+        hello = await page.inner_text(test)
+        print(hello)
+        queue_status_locator = 'h2[data-bdd="statusСard-peopleInLine-count"]'
+        await page.wait_for_selector(queue_status_locator, state="visible", timeout=40000)  
+
+        status_text = await page.inner_text(queue_status_locator)
+        print(f"Initial Queue Status: {status_text}")
+
+        while True:
+            if "It's your turn" in status_text:
+                print("It's your turn! Proceeding to next step with a 20-30 second delay.")
+                await page.wait_for_timeout(20000)  
+                break
+
+            if "calculating" not in status_text and "It's your turn" not in status_text:
+                print(f"Queue status updated: {status_text}. Proceeding to next...")
+
+                people_ahead = int(status_text.split()[0])  
+                if people_ahead > 100:
+                    await page.wait_for_timeout(15000) 
+                else:
+                    await page.wait_for_timeout(5000)  
+
+            print("Still in queue... Checking again in 5 seconds.")
+            await page.wait_for_timeout(5000)  
+            status_text = await page.inner_text(queue_status_locator)
+            print(f"Updated Queue Status: {status_text}")
+
+    except Exception as e:
+        print(f"Error while waiting for queue status: {e}")
+        return False
+
+    return True
+
+
+
+
 async def ensure_element_visible(page, xpath_selector, timeout=30000):
     try:
         await page.wait_for_selector(xpath_selector, state='visible', timeout=timeout)

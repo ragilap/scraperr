@@ -67,3 +67,24 @@ async def scrape_website(url: str, output_filename: str):
             "status": "failed",
             "error": str(e)
         }
+#automate queue
+@celery.task(bind=True)
+def booking_process(self, url: str,section:str,row:str):
+    try:
+        print(f"Starting booking for Section: {section}, Row: {row}...")
+        booking = asyncio.run(booking_tiket(url,row,section))
+        self.update_state(state="SUCCESS", meta={"section": section, "row": row, })
+
+        return booking  
+    except Exception as e:
+        self.update_state(state="FAILURE", meta={"section": section, "row": row, "error": str(e)})
+        raise e
+
+
+async def booking_tiket(url,row,section):
+   try:
+        print(f"Start booking Section : {section} - Row : {row} for URL: {url}")
+        await scrape_with_session(url=url,target_row=row,target_section=section )
+   except Exception as e:
+        print(f"Error during booking {str(e)}")
+        raise e
